@@ -1,75 +1,34 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</head>
-<body class="bg-[#FFFFF]">
+<!DOCTYPE html>
  
-  <!-- nav-->
-  <nav class="flex items-center  p-3 flex-wrap overflow-hidden lg:mt-[40px]">
-    <a href="#" class="p-2 mr-4 inline-flex items-center">
-      <span class="font-[700px] font-[DM Sans] text-[#252525] text-[20px] leading-[26px] lg:mx-[147px]"
-        >E-PAL</span
-      >
-    </a>
-    <button
-      class="inline-flex p-3 rounded lg:hidden ml-auto text-[#252525] outline-none nav-toggler"
-      data-target="#navigation"
-    >
-    <i class="fa-solid fa-bars"></i>
-      </button>
-    <div
-      class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto"
-      id="navigation"
-    >
-      <div
-        class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto"
-      >
-        <a
-          href="#"
-          class="lg:inline-flex lg:w-auto w-full px-5 py-18 font-[DM Sans] font-[700px] text-[14px] leading-[18px]  rounded text-[#252525] items-center justify-center"
-        >
-          <span>Services</span>
-        </a>
-        <a
-          href="#"
-          class="lg:inline-flex lg:w-auto w-full px-5 py-18 font-[DM Sans] font-[700px] text-[14px] leading-[18px]  rounded text-[#252525] items-center justify-center"
-        >
-          <span>Contact</span>
-        </a>
-        <a
-          href="#"
-          class="lg:inline-flex lg:w-auto w-full px-5 py-18 font-[DM Sans] font-[700px] text-[14px] leading-[18px]  rounded text-[#252525] items-center justify-center"
-        >
-          <span>About</span>
-        </a>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> E-pal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body class="bg-[#FFFFF]">
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">E-PAL</label>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Sign up</a></li>
+        <li><a class="active" href="#">Login</a></li>
+      </ul>
+    </nav>
+    <section></section>
  
-        <a
-          href="#"
-          class="lg:inline-flex lg:w-auto w-full px-5 py-18 font-[DM Sans] font-[700px] text-[14px] leading-[18px]  rounded text-[#252525] items-center justify-center"
-        >
-          <span>Sign up</span>
-        </a>
-        <a
-          href="#"
-          class="lg:inline-flex lg:w-auto w-[72px] h-[28px] font-[700px] px-5 py-18 font-[DM Sans] font-[700px] text-[14px] leading-[18px] rounded-[7px] text-center bg-[#32ACE3] items-center justify-center text-white lg:mr-[121px]"
-        >
-          <span>Login</span>
-        </a>
-      </div>
-    </div>
-  </nav>
- 
-  <!-- body for cards -->
-  <main>
-    <div class="grid lg:grid-cols-2 md:grid-cols-2 gap-8 justify-center place-items-center items-center lg:m-28 mt-[138] m-15">
+      <main>
+    <div class="grid lg:grid-cols-2 md:grid-cols-2 gap-8 justify-center place-items-center items-center lg:m-28 m-15">
       <div class="grid justify-center items-center lg:w-[550px] md:w-[349px] w-[320px]">
         <img src="https://res.cloudinary.com/dpokiomqq/image/upload/v1668534063/1_y1a4dx.png" alt="img1" class="lg:w-[550px] md:w-[349px] w-[320px] grid justify-center items-center"/>
  
@@ -199,8 +158,8 @@
     </div>
   </main>
  
-  <!-- footer -->
-   <footer class="lg:mt-[86px] mt-[40px]">
+ 
+        <footer class="lg:mt-[86px] mt-[40px]">
     <div class="flex items-center justify-center">
      <hr class="border justify-center items-center place-items-center grid text-center w-[1196px]"/>   
     </div>
@@ -272,15 +231,6 @@
       </div>
      </div> 
  
-   </footer> 
- 
- 
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"
-  ></script>
- 
-  <script src="./script.js"></script>
-</body>
+   </footer>  
+  </body>
 </html>
